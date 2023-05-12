@@ -1,0 +1,24 @@
+// Trello plugin manifest file
+{
+  "name": "Custom Fields",
+  "description": "Adds custom fields to Trello cards",
+  "version": "1.0.2",
+  "author": "Your Name",
+  "homepage": "https://example.com/custom-fields",
+  "permissions": [
+    {
+      "name": "read",
+      "resources": [
+        "boards",
+        "lists",
+        "cards"
+      ]
+    },
+    {
+      "name": "write",
+      "resources": [
+        "cards"
+      ]
+    }
+  ]
+}
