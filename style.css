@@ -1,0 +1,44 @@
+  font-family: sans-serif;
+  margin: 0;
+}
+
+header {
+  background-color: #fff;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 0;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+section {
+  padding: 20px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
