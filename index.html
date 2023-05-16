@@ -52,7 +52,7 @@
   </section>
  
   <script src="https://p.trellocdn.com/power-up.min.js"></script>
-  <script>
+    <script>
     TrelloPowerUp.initialize({
       // Start adding handlers for your capabilities here!
       'card-buttons': function (t, options) {
@@ -61,9 +61,26 @@
             icon: "https://i.ibb.co/6sbknH0/logo-stroke-32pt-style-2-no-stroke.png",
             text: 'Hello World!',
             callback: function (t) {
-              return t.card().then((card) => alert("hello world!"))
+              return t.card().then((card) => {
+                t.saveCustomField('custom_field_1', 'Hello World!');
+                alert("hello world!");
+              })
             }
           }
+        ];
+      },
+      'custom-fields': function (t, options) {
+        return [
+          {
+            id: 'custom_field_1',
+            label: 'Custom Field 1',
+            type: 'text',
+          },
+          {
+            id: 'custom_field_2',
+            label: 'Custom Field 2',
+            type: 'checkbox',
+          },
         ];
       },
     });
